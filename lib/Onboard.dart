@@ -1,6 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+
 import 'package:lottie/lottie.dart';
 import 'package:rive/rive.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
@@ -14,7 +16,7 @@ class Onboard extends StatelessWidget {
       //validation
     }
     else{
-      Get.snackbar("Oops!","Please Enter Your Name",snackPosition: SnackPosition.TOP,backgroundColor: Colors.red,duration: Duration(seconds: 1),);
+      Get.snackbar("Oops!","Please Enter Your Name",snackPosition: SnackPosition.TOP,backgroundColor: Colors.red,duration: const Duration(seconds: 1),);
     }
   }
 
